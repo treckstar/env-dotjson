@@ -1,11 +1,15 @@
-import { myPackage } from '../src';
+import { json2env, ConvertOptions } from '../src';
 
 describe('index', () => {
-  describe('myPackage', () => {
+  describe('json2env', () => {
     it('should return a string containing the message', () => {
-      const message = 'Hello';
+      const message = '.env file created successfully!';
+      const options: ConvertOptions = {
+        inputFilename: 'test.json',
+        outputFilename: '.env'
+      };
 
-      const result = myPackage(message);
+      const result = json2env(options);
 
       expect(result).toMatch(message);
     });
