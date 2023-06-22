@@ -6,4 +6,4 @@ on: [pull_request]
 
 jobs:
   build:
-    uses: treckstar/treckstar/dotfiles/.github/workflows/pr.yml@main
+    uses: treckstar/dotfiles/.github/workflows/pr.yml@main
