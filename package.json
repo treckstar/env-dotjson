@@ -1,6 +1,6 @@
 {
   "name": "env-dotjson",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "main": "./lib/index.js",
   "files": [
@@ -120,5 +120,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
