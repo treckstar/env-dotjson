@@ -1,6 +1,6 @@
 # Reusable workflow for code analysis; to eject, you can replace this file with
-# https://github.com/treckstar/treckstar/blob/main/.github/workflows/codeql-analysis.yml
-name: "CodeQL"
+# https://github.com/treckstar/dotfiles/blob/main/.github/workflows/codeql-analysis.yml
+name: 'CodeQL'
 
 permissions:
   security-events: write
@@ -14,8 +14,8 @@ on:
     # The branches below must be a subset of the branches above
     branches: [main]
   schedule:
-    - cron: "36 7 * * 6"
+    - cron: '36 7 * * 6'
 
 jobs:
   analyze:
-    uses: treckstar/treckstar/.github/workflows/codeql-analysis.yml@main
+    uses: treckstar/dotfiles/.github/workflows/codeql-analysis.yml@main

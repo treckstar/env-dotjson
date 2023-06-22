@@ -1,5 +1,5 @@
 # Reusable workflow for releases; to eject, you can replace this file with
-# https://github.com/treckstar/treckstar/blob/main/.github/workflows/release.yml
+# https://github.com/treckstar/dotfiles/blob/main/.github/workflows/release.yml
 name: Release
 on:
   push:
@@ -11,6 +11,6 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-    uses: treckstar/treckstar/.github/workflows/release.yml@main
+    uses: treckstar/dotfiles/.github/workflows/release.yml@main
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
